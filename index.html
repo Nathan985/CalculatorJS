@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caluladora 3000</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span></span>
+            <span></span>
+            <span></span>
+        </header>
+        <div class="screen">
+            <span id="result">0</span>
+            <span id="count"> 0 </span>
+        </div>
+        <div  class="keyboard" >
+            <div  class="button" >
+                <div onclick="registerValue('1')"> 1 </div>
+                <div onclick="registerValue('2')"> 2 </div>
+                <div onclick="registerValue('3')"> 3 </div>
+                <div onclick="registerValue('+')"> + </div>
+                <div onclick="registerValue('4')"> 4 </div>
+                <div onclick="registerValue('5')"> 5 </div>
+                <div onclick="registerValue('6')"> 6 </div>
+                <div onclick="registerValue('-')"> - </div>
+                <div onclick="registerValue('7')"> 7 </div>
+                <div onclick="registerValue('8')"> 8 </div>
+                <div onclick="registerValue('9')"> 9 </div>
+                <div onclick="registerValue('*')"> * </div>
+                <div> </div>
+                <div onclick="registerValue('0')"> 0 </div>
+                <div onclick="registerValue('.')"> . </div>
+                <div onclick="registerValue('/')"> / </div>
+            </div>
+            <div class="result" >
+                <div onclick="ControllerOnOff()"> <img src="./img/botao.png" alt=""> </div>
+                <div onclick="Sum()"> = </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
